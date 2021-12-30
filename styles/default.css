@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
-html{
+html, body{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    color: white;
-    background-color: #121212;
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar{
+.banner{
     font-weight: 700;
-    background-color: #332940;
-
+    position: relative;
+    height: 60px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
-.nav-box-1{
-    color: white;
-    align-items: flex-start;
+.nav-bar, .nav-bar > li{
+    display: inline-flex;
+    align-items: center;
 }
 
-/*Links in nav-bar*/
-.nav-box-2 > a{
-    color: white;
-    align-items: center;
-    justify-content: space-evenly;
+.nav-bar > li > a {
+    color: black;
+}
+
+#nav-name{
+    position: absolute;
+    left: 0;
+    display: inline;
+    align-self: center;
 }
