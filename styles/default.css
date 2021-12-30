@@ -7,16 +7,19 @@ html, body{
     background-color: white;
     margin: 0;
     padding: 0;
+    min-width: 960px;
 }
 
 .banner{
     font-weight: 700;
+    font-size: 20px;
     position: relative;
     height: 60px;
     display: flex;
     justify-content: flex-end;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    padding: 0 20px;
 }
 
 .nav-bar, .nav-bar > li{
@@ -25,7 +28,7 @@ html, body{
 }
 
 .nav-bar > li > a {
-    color: black;
+    padding-left: 20px;
 }
 
 #nav-name{
@@ -33,4 +36,33 @@ html, body{
     left: 0;
     display: inline;
     align-self: center;
+}
+
+.main-content{
+    margin: 0 auto 0 auto;
+    width: 960px;
+    padding: 150px 30px 0 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.link-box{
+    display: inline-block;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 36px;
+    width: 470px;
+}
+
+p{
+    font-size: 20px;
+    width: 500px;
 }
