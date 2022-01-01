@@ -57,8 +57,6 @@ a{
 
 .link-box{
     display: inline-block;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -66,6 +64,23 @@ a{
 .link-box:hover, .link-box:hover > a{
     background-color: rgb(106, 170, 106);
     color: rgb(49, 78, 49);
+}
+
+.project-list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+}
+
+.project{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-start;
+}
+.project > img{
+    width: 30%;
+    height: 30%;
+    padding: 0 30px 60px 0;
 }
 
 h1{
