@@ -24,6 +24,7 @@ html, body{
 .nav-bar, .nav-bar > li{
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-bar > li > a {
@@ -83,6 +84,11 @@ a{
     padding: 0 30px 60px 0;
 }
 
+.card{
+    position: absolute;
+    margin: auto auto;
+}
+
 h1{
     font-size: 36px;
     width: 50%;
@@ -91,5 +97,5 @@ h1{
 p{
     font-size: 20px;
     min-width: 60%;
-    max-width: 85%;
+    max-width: 70%;
 }
