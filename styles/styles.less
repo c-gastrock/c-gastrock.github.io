@@ -2,9 +2,6 @@
 
 @spacer: 50px;
 
-.badge-color(){
-    background-color: #6C757D!important;
-}
 .badge-color(@color){
     background-color: @color!important;
 }
@@ -56,16 +53,20 @@ body{
     padding: 5px 0 5px 25px;
 }
 
-.unity{
-    .badge-color();
+.unity-badge{
+    .badge-color(#292d2f);
 }
 
-.csharp{
+.csharp-badge{
     .badge-color(rgb(120, 50, 150));
 }
 
-.java{
-    .badge-color(goldenrod);
+.java-badge{
+    .badge-color(rgb(218, 165, 32));
+}
+
+.javafx-badge{
+    .badge-color(rgb(109, 83, 18));
 }
 
 .css-badge{
