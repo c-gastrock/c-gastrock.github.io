@@ -1,65 +1,95 @@
+<!--
+    Bootstrap
+    
+    Components: Navbar, collapse, card
+    Utilities & Layouts:  grid, gutter
+
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <!--Metadata, etc.-->
-        <title>Home|Chase Gastrock's Portfolio</title>
-        <meta name="author" content="Chase Gastrock">
-        <meta name="description" content="The portfolio of Chase Gastrock. CURRENTLY AVAILABLE TO HIRE!"
+        <title>Home | Chase Gastrock</title>
+
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="author" content="Chase Gastrock">
+        <meta name="description" content="The portfolio of Chase Gastrock. CURRENTLY AVAILABLE TO HIRE!">
+        <meta name="keywords" content="Chase, Gastrock, student, hire, Computer, Science, UVA, programmer, coder, software, Unity, C#, Java, C++, git"> 
 
         <!--Resources-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link href="styles/default.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <div class="banner"> 
-                    <ul class="nav-bar">
-                        <li id="nav-name"><a href="index.html">Chase Gastrock</a></li>
-                        <li><a href="https://github.com/c-gastrock" target="_blank">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/chase-gastrock/" target="_blank">LinkedIn</a></li>
-                        <li id="hire"><a href="mailto:chase.gastrock@gmail.com" target="_blank">Hire Me!</a></li>
-                    </ul>   
-                </div>             
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main Navigation Bar">
+                <div class="container-xl">
+                    <a class="navbar-brand" href="#">Chase Gastrock</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop" aria-controls="navbarsTop" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarsTop">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/c-gastrock" target="_blank">Github</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://linkedin.com/in/chase-gastrock/" target="_blank">LinkedIn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:chase.gastrock@gmail.com" target="_blank">Hire Me!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <div class="main-landing">
-            <div class="introduction">
-                <h1>
-                    Hi, I'm Chase - A CS Student
-                    at the University of Virginia.
-                </h1>
-        
-                <p>
-                    I've worked with the Jaswal and Krishnamurthy labs at UVA and UCalgary, developing learning tools for the Hololens 2.
-                    <br>
-                    Currently, I'm teaching myself web technologies (HTML, CSS, JS) to expand 
-                    my range of knowledge and diversify my skills.
-                </p>
-                <div class="link-box"><a href="mailto:chase.gastrock@gmail.com"><u>chase.gastrock@gmail.com</u></a></div>
-                <div class="project-list">
-                    <h1>
-                        Projects
-                    </h1>
-                    <div class="project" id="project-1">
-                        <img src="images/cubey-01.png" alt="Cubey Run">
-                        <div class="project-info">
-                            <h1>CUBEY RUN</h1>
-                            <p>An infinite runner game demo made in Unity. Based on the popular tutorial series by <a href="https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR53Jce9hP7G5xC4O9AgnOuL" target="_blank"><u>Brackeys</u></a> and then built upon. Current iteration includes procedurally generated obstacles, menu system, and local leaderboards.</p>
-                            <div class="card">
-                                <p>[Card]</p>
-                            </div>
+        <div class="container" style="margin-top: 100px">
+            <h1>
+                Hi, I'm Chase - A CS Student
+                at the University of Virginia.
+            </h1>
+    
+            <p>
+                I've worked with the Jaswal and Krishnamurthy labs at UVA and UCalgary, developing learning tools for the Hololens 2.
+                <br>
+                Currently, I'm teaching myself web technologies (HTML, CSS, JS) to expand 
+                my range of knowledge and diversify my skills.
+            </p>
+            <div class="link-box"><a href="mailto:chase.gastrock@gmail.com"><u>chase.gastrock@gmail.com</u></a></div>
+        </div>
+        <div class="container">
+            <h2>
+                Projects
+            </h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="images/cubey-01.png" alt="Cubey Run">
+                        <div class="card-body" >
+                            <h5 class="card-title">CUBEY RUN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">An infinite runner game demo.</h6>
+                            <p class="card-text">Made in Unity. Based on the popular tutorial series by <a href="https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR53Jce9hP7G5xC4O9AgnOuL" target="_blank"><u>Brackeys</u></a> and then built upon. Current iteration includes procedurally generated obstacles, menu system, and local leaderboards.</p>
                         </div>
                     </div>
-                    <div class="project" id="project-2">
-                        <img src="images/ctr-01.png" alt="Coffee Tracker">
-                        <div class="project-info">
-                            <h1>Coffee Tracker</h1>
-                            <p>Personal tracker for coffee recipes, tasting notes, and potential improvements. Includes recipe ratio automation, a timer with a timestamp function, and a log for the notes from previous sessions.</p>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ctr-01.png" alt="Coffee Tracker">
+                        <div class="card-body" >
+                            <h5 class="card-title">Coffee Tracker</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">A personal digital coffee log.</h6>
+                            <p class="card-text">Personal tracker for coffee recipes, tasting notes, and potential improvements. Includes recipe ratio automation, a timer with a timestamp function, and a log for the notes from previous sessions.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>
