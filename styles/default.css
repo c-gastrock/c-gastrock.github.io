@@ -34,6 +34,17 @@ body{
     width: 100%;
 }
 
+.accordion-button{
+    font-weight: 700;
+}
+
+#footer-container{
+    color: #fff;
+    margin-bottom: 0px;
+    padding: 5px 0 5px 25px;
+}
+
+
 /* starting at large tablets and small laptops, accordion should be smaller than full screen */
 @media only screen and (min-width: 1024px){ 
     #infoAccordion{
