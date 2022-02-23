@@ -19,3 +19,17 @@ body{
     height: 17vw;
     object-fit: cover;
 }
+
+.card-body{
+    border-top: 1px;
+    border-top-style: solid;
+    border-color: lightgray;
+}
+
+.card-subtitle{
+    font-style: italic;
+}
+
+.badge {
+    vertical-align: middle;
+}
